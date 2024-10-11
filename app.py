@@ -3,7 +3,7 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.ext.declarative import declarative_base
 
-# Use declarative_base instead of DeclarativeBase
+# Create the base class using declarative_base
 Base = declarative_base()
 
 db = SQLAlchemy(model_class=Base)
@@ -17,7 +17,7 @@ app.config["SQLALCHEMY_ENGINE_OPTIONS"] = {
 db.init_app(app)
 
 with app.app_context():
-    import models
+    import models  # Ensure models are correctly defined
     db.create_all()
 
 from init_app import init_app, login_manager
