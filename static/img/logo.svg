@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <rect width="100" height="100" fill="#D4AF37"/>
+  <text x="50" y="50" font-family="Arial, sans-serif" font-size="40" fill="white" text-anchor="middle" dominant-baseline="central">GPR</text>
+  <path d="M10,90 L90,90 L50,10 Z" fill="none" stroke="white" stroke-width="2"/>
+</svg>
